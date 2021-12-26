@@ -40,9 +40,13 @@ if __name__=="__main__":
 		
 		elif 'add task' in query:
 			say("The feature will be comming soon!")
+			query=query.replace("add task","")
+			add_task(query)
+
 		elif 'view pending tasks' in query:
 			#say("The feature will be comming soon!")
 			pending_task()
+			
 		elif 'shutdown jarvis' in query:
 			say("Shutting down sir, do call me for assisting you!")
 			break
