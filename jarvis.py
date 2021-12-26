@@ -3,6 +3,7 @@ from speech_commands import *
 from mic_commands import *
 import wikipedia
 import webbrowser
+from todo import *
 #if you are using linux, install espeak also---> sudo apt-get update && sudo apt-get install espeak
 
 engine=pyttsx3.init()
@@ -39,6 +40,9 @@ if __name__=="__main__":
 		
 		elif 'add task' in query:
 			say("The feature will be comming soon!")
+		elif 'view pending tasks' in query:
+			#say("The feature will be comming soon!")
+			pending_task()
 		elif 'shutdown jarvis' in query:
 			say("Shutting down sir, do call me for assisting you!")
 			break
